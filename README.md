@@ -23,4 +23,10 @@ Product Performance
 Sales Trends
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
+🛡️ License
+This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
+
+🌟 About Me
+Hi there! I'm Youssef Larbi. I’m a data enthusiast and passionate Data Science student, driven to attain as much knowledge about the field and integrate Data/IT into every aspect of my day-to-day life!
+
 

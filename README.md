@@ -1,9 +1,10 @@
 # Data Warehouse and Analytics Project
 
-Welcome to the Data Warehouse and Analytics Project repository! 🚀
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+Welcome to the Data Warehouse and Analytics Project repository! 
+🚀 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
 📖 Project Overview
+
 This project involves:
 
 - Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
@@ -14,15 +15,15 @@ This project involves:
 
 - Analytics & Reporting: Creating SQL-based reports and dashboards for actionable insights.
 
-🚀 Project Requirements:
+🚀 Project Requirements
 
-I/ Building the Data Warehouse (Data Engineering):
+I/ Building the Data Warehouse (Data Engineering)
 
-1/ Objective:
+1/ Objective
 
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
-2/ Specifications:
+2/ Specifications
 
 - Data Sources: Import data from two source systems (ERP and CRM) provided as CSV files.
 
@@ -36,7 +37,7 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 II/ BI: Analytics & Reporting (Data Analysis)
 
-1/ Objective:
+1/ Objective
 
 Develop SQL-based analytics to deliver detailed insights into:
 
@@ -48,11 +49,11 @@ Develop SQL-based analytics to deliver detailed insights into:
 
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
-🛡️ License:
+🛡️ License
 
 This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
 
-🌟 About Me:
+🌟 About Me
 
 Hi there! I'm Youssef Larbi. I’m a data enthusiast and passionate Data Science student, driven to attain as much knowledge about the field and integrate Data/IT into every aspect of my day-to-day life!
 

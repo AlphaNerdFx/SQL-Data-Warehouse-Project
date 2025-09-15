@@ -3,11 +3,12 @@
 Stored Procedure : Load  Layer (Bronze -> Silver)
 ========================================================================================================
 Script Purpose:
-	This stored procedure performs the ETL (Extract, Transform, Load) process to populate the 'silver' 
-	schema tables  from the 'bronze' schema
-  Actions Performed:
-	- Truncates Silver tables.
-	- Inserts transformed and cleansed data from Bronze into Silver tables.
+  This stored procedure transforms and loads data into the 'silver' schema 
+  from the 'bronze' schema as part of the Mechadillion architecture pipeline. 
+  It performs the following actions:
+  - Cleans, standardizes, and applies business rules to the raw data ingested in the bronze layer.
+  - Ensures data types, formats, and referential integrity are aligned with the silver schema design.
+  - Inserts the curated and validated data into silver tables for downstream consumption.
 
   Parameters:
   None. 
@@ -179,8 +180,7 @@ BEGIN
 			END bdate,
 			CASE WHEN gen = 'M' THEN 'Male'
 				 WHEN gen = 'F' THEN 'Female'
-				 WHEN gen = ' ' THEN NULL
-				 ELSE TRIM(gen)
+				 ELSE 'n/a'
 			END gen
 		FROM bronze.erp_cust_az12
 
@@ -203,8 +203,6 @@ BEGIN
 				 ELSE TRIM(cntry)
 			END cntry -- Normalize and Handle missing or black country codes
 		FROM bronze.erp_loc_a101
-		
-		WHERE REPLACE(cid,'-','') NOT IN (SELECT cst_key FROM silver.crm_cust_info)
 		
 		SET @end_time = GETDATE()
 		PRINT '>> Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds'

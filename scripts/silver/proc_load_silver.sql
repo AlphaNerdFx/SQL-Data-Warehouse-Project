@@ -3,12 +3,11 @@
 Stored Procedure : Load  Layer (Bronze -> Silver)
 ========================================================================================================
 Script Purpose:
-  This stored procedure transforms and loads data into the 'silver' schema 
-  from the 'bronze' schema as part of the Mechadillion architecture pipeline. 
-  It performs the following actions:
-  - Cleans, standardizes, and applies business rules to the raw data ingested in the bronze layer.
-  - Ensures data types, formats, and referential integrity are aligned with the silver schema design.
-  - Inserts the curated and validated data into silver tables for downstream consumption.
+	This stored procedure performs the ETL (Extract, Transform, Load) process to populate the 'silver' 
+	schema tables  from the 'bronze' schema
+  Actions Performed:
+	- Truncates Silver tables.
+	- Inserts transformed and cleansed data from Bronze into Silver tables.
 
   Parameters:
   None. 

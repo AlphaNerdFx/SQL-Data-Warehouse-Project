@@ -180,7 +180,8 @@ BEGIN
 			END bdate,
 			CASE WHEN gen = 'M' THEN 'Male'
 				 WHEN gen = 'F' THEN 'Female'
-				 ELSE 'n/a'
+				 WHEN gen IS NULL OR TRIM(gen) = ' ' THEN 'n/a'
+			ELSE TRIM(gen)
 			END gen
 		FROM bronze.erp_cust_az12
 

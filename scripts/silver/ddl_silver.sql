@@ -75,7 +75,7 @@ IF OBJECT_ID ('silver.erp_loc_a101', 'U') IS NOT NULL
 GO
 
 CREATE TABLE silver.erp_loc_a101 (
-	id NVARCHAR(50),
+	cid NVARCHAR(50),
 	cntr NVARCHAR(50),
 	dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
